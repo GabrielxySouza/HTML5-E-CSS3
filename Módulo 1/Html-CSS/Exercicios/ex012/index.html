@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>ESte vídeo está hospedado no próprio servidor</p>
+    <video width="600" poster="imagem/limoes-capa.png" controls autoplay loop>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meuvideo.ogv" type="video/ogv">
+        <source srcs="videos/meuvideo.webm" type="video/webm">
+        <p>Seu navegador não consegue reproduzir o video. <a href="videos/meu-video.mp4">Clique aqui</a> para baixar em formato MP4.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw?si=4X4TIRgQO7daCKVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--No vimeo é o mesmo processo, com algumas opções a mais. Nessa plataforma (paga), você consegue mostrar videos que são restristos seu. Tem uma qualidade de reproduções melhor da qualidade de vídeo, porém seu algoritmo não é taõ bom quanto o do youtube, podendo ocasionar leves travamentos às vezes.-->
+</body>
+</html>

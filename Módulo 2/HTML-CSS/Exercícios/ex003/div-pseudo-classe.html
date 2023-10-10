@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgrey;
+            text-align: center;
+            border: 2px solid darkgrey;
+            height: 200px;
+            width: 200px;
+        }
+
+        #d1{
+            background-color: lightblue;
+        }
+
+        #d2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #d3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*pseudo-classes tem que estar relacionadas a um elemeto ou uma classe. São propriedades relacionada ao estado de uma determinada elemento. São declarados com : */
+        div:hover{
+            background-color: brown;
+        }
+
+        #d4 > p{
+            display: none;
+        }
+        /*> = children(filhas) da div nesse caso*/
+        #d4:hover > p{ 
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            color: white;
+            background-color: yellow;
+            height: 20px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!--uma div é um espaço, geralmente de uma linha no navegador, mas que você pode editar seu espaço nos estilos-->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <H1>Exemplo de Hover</H1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div id="d4">passe o mouse aqui
+        <p>Surpresaa</p>
+    </div>
+</body>
+</html>

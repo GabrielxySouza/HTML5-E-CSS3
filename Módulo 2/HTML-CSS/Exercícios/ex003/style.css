@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* tudo que em HTML é id = em CSS é #
+   tudo que em HTML é class = em CSS é .
+*/
+
+body{
+    background-color: rgb(171, 243, 171);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(0, 71, 0);
+}
+/*o h1 que recebeu id recebe formatação sobreescrita ou complementar. só pode haver um id, pois ele é único para cada tipo.*/
+#titulo-principal{
+    text-align: center;
+    background-color: rgb(26, 95, 26);
+    color: white;
+}
+
+h2{
+    color: rgb(22, 124, 22);
+}
+
+/*Também conseguimos adicionar mais de uma classe para um mesmo elemento. ex: o h2 avanaçado, pode ter ao mesmo tempo a class= avancado destaque (escrito dessa forma mesmo, no HTML)*/
+
+/* a tag <span>,  que está no documento HTML, HTML básico, marca uma parte qualquer no meio do texto e nela contem a class="intermediario", para mostrar que qualquer coisa que tiver aquela classe vai adquirir seus estilos*/
+
+.basico{
+    color: rgb(22, 124, 22);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(124, 114, 22);
+    font-weight: bold;
+}
+
+.avancado{
+    color: rgb(124, 22, 22);
+    font-weight: bold;
+}
+
+.destaque{
+    background-color: rgba(228, 213, 76, 0.432);;
+}

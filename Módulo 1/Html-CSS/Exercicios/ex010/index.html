@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncoras e links</title>
+</head>
+<body>
+    <h1>Vamos criar um link / externos</h1>
+
+    <a href="https://gustavoguanabara.github.io">Acesse meu perfil github</a> <br>
+    <!-- Por padrão, o navegador abre o link na mesma janela, mesmo sendo externo-->
+
+    <!--O atributo target pode dizer onde o link seja aberto; como _blank em outra página, o _self, na mesma-->
+    <p>Acesse o meu perfil no <a href="https://www.instagram.com/gabriel__xy/" target="_blank">instagram</a></p>
+
+    <H2>Link dos outros</H2>
+
+    <!--um recurso para indicar a natureza do link e o atributo rel; next para indicar continuação de um doc., external indica um link para outro site, etc. -->
+    <p>Abrir <a href="https://www.instagram.com/gabriel__xy/" target="_blank" rel="external">perfil do instagram </a> em outra janela</p>
+
+    <h2>Link para downloads / internos</h2>
+    <!--para fazer para links externos, basta mudar o caminho da URL-->
+    
+    <a href="C:\Users\gabri\OneDrive\Área de Trabalho\pessoal gabrielxy\Livros" download="livro Percy Jackson A batalha do labirinto" type="application/pdf" target="_blank" rel="next"> Baixe aqui Percy Jackson A batalha do labirinto.PDF </a>
+    <br>
+    <a href="C:\Users\gabri\OneDrive\Área de Trabalho\pessoal gabrielxy\2023\Cursos\HTML5 E CSS3\Módulo 1\Html-CSS\Exercicios\ex010\livro" download="livro Percy Jackson A batalha do labirinto" type="application/zip" target="_blank" rel="next"> Baixe aqui Percy Jackson A batalha do labirinto.zip </a>
+
+    <p>segunda pagina do site clique <a href="pg02.html" target="_self" type="next">aqui</a></p>
+
+    <!--Quando não quiser que um link seja "relacionado" ao seu site, coloque o rel como nofollow. É o mesmo que dizer ao mecanismo de busca que você não dá o aval para o conteúdo.-->
+
+    <p>terceira pagina do site clique <a href="noticias/pg03.html" target="_self" type="next">aqui</a></p>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold
+        }
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        /*pseudo-elementos iniciam com :: 
+          eles mechem diretamente no conteúdo periférico dos elementos.
+        */
+
+        /*
+          Também é possivel colocar pseudos-elementos nas classes.
+        */
+
+        .especial{
+            background-color:rgb(250, 171, 171);
+        }
+
+        .especial::before{
+            content: '→;'; /*content = conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: lightskyblue;
+        }
+
+        .especial::after{
+            content: '← [link]'; /*content = conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li ><a href="https://gustavoguanabara.github.io" target="_blank">repositório github</a></li>
+        <li><a href="https://youtube.com/CursoemVídeo/" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site CursoemVídeo</a></li>
+    </ul>
+
+    
+</body>
+</html>

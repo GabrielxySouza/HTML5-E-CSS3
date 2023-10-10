@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(240, 178, 96);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            /*para criar melhor um box-shadow, abra o documento no navegador > devtols: lá você pode editar o código sem alterar o original. Add o box shadow e estilize da melhor maneira, depoois que ver o resultado, basta copiar o código gerado e colar no código original.*/
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+        }
+        main > h1{
+            background-color: darkgrey;
+        }
+        #assuntos{
+            background-color: brown;
+        }
+        #noticias{
+            background-color: aquamarine;
+            padding: 5px;
+        }
+        article{
+            background-color: rgb(202, 145, 145);
+            padding: 5px;
+        }
+        article > aside{
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0xp;
+        }
+        footer >p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body> <!--Toda essas grouping tags são como a div, mas de forma semântica, ou seja, com significados. Isso faz com que seu documento fique mais organizado e valorizado pelos navegadores. Mas você contunua tento que estilizalo.-->
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--conteúdo principal-->
+        <h1>Principais</h1>
+        <section id="assuntos">
+            <h2>Assunto qualquer</h2>
+            <p>Encheção de linguiça</p>
+        </section>
+        <section id="noticias">
+            <h2>Mais sobre</h2>
+            <article>
+                <aside>
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam culpa reprehenderit vitae odio deleniti neque sed. Ipsa inventore soluta, fugit doloribus, quam delectus corporis nam perspiciatis, quo praesentium voluptatibus.</p>
+                    <p>artigo escrito por Silva José</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer><!--rodapé -->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+
+<div id="bola"></div>
+</body>
+</html>

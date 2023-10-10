@@ -1,0 +1,15 @@
+@charset "UTF-8"; /* Esse comando (/*) cria uma seção de comentário, assim como O(<!-->) do hmtl. O comando @charset UTF-8 e para eviatr possíveis erros com agluma acentuação futura em estilos avançados.*/
+
+/*Nesse tipo de estilo, as alterações vão para todas as páginas em que o estilo é 'linkado'. Assim padronizando e agilizando futuras alterações.*/
+
+body{
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: brown;
+    background-color: aqua;
+}
+a{
+    color: blue;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: peachpuff;
+        }
+        article#caixa1{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 1px 10px;
+            /*Sombra aqui*/
+            box-shadow: 3px 5px 4px rgba(99, 85, 74, 0.726);/* valores = horizontal, vertical, embaçamento e cor*/
+        }
+        article#caixa2{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px rgba(99, 85, 74, 0.726);
+            /*Arredondamento de bordas. um valor = todas as bordar; dois valores = intercaladas, a partir da borda superior esquerda; quatro valores = cada uma das bordas recebe um valor, apartir da superior esquerda, indo em sentido horario*/
+            border-radius: 10px;
+        }
+        article#caixa3{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            margin-bottom: 30px;
+            box-shadow: 3px 5px 4px rgba(99, 85, 74, 0.726);
+            border-radius: 10px 20px 30px 40px;
+        }
+        article#caixa4{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px rgba(99, 85, 74, 0.726);
+            border-radius: 10px 25px;
+        }
+    </style>
+</head>
+<body>
+    <article id="caixa1">
+        <h1>Usando sombras</h1>
+        <p>Aprendendo a usar sombras com esses exemplo simples.</p>
+        
+    </article>
+    <article id="caixa2">
+        <h1>Usando sombras</h1>
+        <p>Aprendendo a usar sombras com esses exemplo simples.</p>
+    </article>
+    <article id="caixa3">
+        <h1>Usando sombras</h1>
+        <p>Aprendendo a usar sombras com esses exemplo simples.</p>
+    </article>
+    <article id="caixa4">
+        <h1>Usando sombras</h1>
+        <p>Aprendendo a usar sombras com esses exemplo simples.</p>
+    </article>
+
+</body>
+</html>

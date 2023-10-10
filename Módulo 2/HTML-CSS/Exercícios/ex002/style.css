@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    /*Medidas absolutas
+        cm, mm, in(polegadas), px, pt, pc(paica)
+        
+      Medidas relativas
+         em (maiúscula), ex (altura x), rem (em= body), vw(largura da viewport - tela), vh (altura da viewport), %   
+         16px (padrão dos navegadores) geralmente correspondem a 1em
+        */
+    font-size:  1em;
+    /*É recomendado usar mais em, pois ele é relativa a porcentagem do tamanho padrão da fonte, e isso acaba adaptando melhor a outros tipos de telas maiores ou menores.*/ 
+    font-weight:100 ;
+    /*temos que usar fontes que permitam a vairação de peso, seja ela em números(100 a 900(nem todas as fontes tem toda essa variação)) ou lighter, normal, bold ou bolder*/
+    font-style: italic;
+    /*pode ser italic, normal, oblique. porém, nem todas as fontes possuem a variação de ter italico e pesos compatíveis.*/
+    text-decoration: underline; /*sublinhado*/
+
+    /*para tudo isso funcionar, a família da fonte tem que possiblitar todas essas configurações.*/
+    }
+h1{
+    /*O shorthand permite que faça varias configurações da propriedade font em uma só linha. Utilizado font na ordem certa: 
+      font-style -> font-wieght -> font-size -> font-family   
+    */
+    font: italic bold 3em 'Franklin Gothic Medium', 'Arial Narrow', 'sans-serif';
+    /*Não é necessário colocar todas as propriedades, apenas as que precisar. Ex: font: bold 3em 'Franklin Gothic Medium', 'Arial Narrow', 'sans-serif'; */
+    color: rgb(24, 97, 126);
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(33, 136, 161);
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
