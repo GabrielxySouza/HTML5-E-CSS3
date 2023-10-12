@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens-cap19/target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /*mesmo que não coloque, já é padrão*/
+            height: 500px;
+            background-color: rgb(121, 8, 121);
+            padding: 15px;
+        }
+
+        #conteudo{
+            background-image: url(imagens-cap19/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute; /*com isso você pode colocar duas propriedades: left e top*/
+            height: 200px;
+            width: 250px;
+            background-color: rgb(40, 177, 40);
+            /*left- distancia começando da borda esquerda p/ direita 
+            top - distancia começando do topo p/ baixo */
+            left: 50%; /*valores px ou %*/
+            top: 50%;
+            /*a imagem não fica perfeitamente centralizada, na verdade o que fica centralizado e boda superior esquerda dela, para resolver usamos o:*/
+            transform: translate(-50%, -50%);
+            /*ele  se referencia a partir do centro do conteiner verde, colocando os valores em px ou % (valores negativos ele faz o sentido contrário do lef/top)*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
