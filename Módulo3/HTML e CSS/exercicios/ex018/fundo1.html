@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fundo 1</title>
+    <title>tipos de fundos</title>
     <style>
+        div.imgfundo{
+            margin: 50px;
+        }
         div.imgfundo#f1{
             background-image: url(https://github.com/gustavoguanabara/html-css/blob/master/imagens/mascote.png?raw=true); /*quando a imagem for pequena, elas vai se repetir até caber em todo background = background-repeat:repeat(padrão)*/
             display: inline-block;
@@ -40,13 +43,21 @@
             height: 700px;
             background-size: 100px;
         }
+        div.imgfundo#f5{
+            background-image: url(https://github.com/gustavoguanabara/html-css/blob/master/imagens/mascote.png?raw=true); /*quando a imagem for pequena, elas vai se repetir até caber em todo background = background-repeat:repeat(padrão)*/
+            display: inline-block;
+            background-repeat:no-repeat;
+            border: 10px solid black;
+            width: 700px;
+            height: 700px;
+            background-size: 100%; /*diz o tamanho do conteúdo do fundo. pode ser em px ou porcentagem*/
+        }
     </style>
 </head>
 <body>
     <div class="imgfundo" id="f1"></div>
-    
     <div class="imgfundo" id="f2"></div>
     <div class="imgfundo" id="f3"></div>
     <div class="imgfundo" id="f4"></div>
-</body>
+    <div class="imgfundo" id="f5"></div>
 </html>
