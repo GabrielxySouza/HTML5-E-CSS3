@@ -12,9 +12,17 @@
             background-position:center top;
             background-repeat: no-repeat;
             background-size: cover; /*cover = preencher todo o fundo, cortando a imagem de acordo com o tamanho da janela e sua origem (left-top, center-center...). contain = redimensiona a imagem de acordo com o tamanho da janela e sua origem (left-top, center-center...). auto = tamanho orignal, o navegador coloca por padrão. também podem ser definidos tamanhos em px ou porcentagem*/
+             background-attachment: fixed;   /*significa vínculo: fixed = deixa a o fundo parado e rola o conteúdo. 
+             o scroll = faz com que o fundo role também.
+             Nesse caso não precisaria de um 'no-repeat'*/  
+
+             /* shorthand -background:
+                color > image > position > repeat > [size] > attachment*/
+
+                /*no shorthand, o size impede que o fundo funcione(?), mesmo que a especificação do W3C diga que sim. Então quando for usar uma shorthand de background, coloque o size por fora*/
         }
         main{
-            width: 400px;
+            max-width: 400px;
             background-color: aliceblue;
             border: 3px solid darkblue;
             margin: auto;
@@ -26,6 +34,14 @@
 <body>
     <main>
         <h1>Teste de background</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione, sequi excepturi, facilis, maxime iure saepe corporis molestias dolorem vero praesentium a. Iusto alias minus, sit aliquid facere cupiditate ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, repellendus? Veritatis consectetur, nesciunt beatae ab maiores eius enim deserunt laborum, porro itaque repudiandae rem accusamus doloremque quia atque culpa cupiditate?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione, sequi excepturi, facilis, maxime iure saepe corporis molestias dolorem vero praesentium a. Iusto alias minus, sit aliquid facere cupiditate ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, repellendus? Veritatis consectetur, nesciunt beatae ab maiores eius enim deserunt laborum, porro itaque repudiandae rem accusamus doloremque quia atque culpa cupiditate?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione, sequi excepturi, facilis, maxime iure saepe corporis molestias dolorem vero praesentium a. Iusto alias minus, sit aliquid facere cupiditate ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, repellendus? Veritatis consectetur, nesciunt beatae ab maiores eius enim deserunt laborum, porro itaque repudiandae rem accusamus doloremque quia atque culpa cupiditate?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione, sequi excepturi, facilis, maxime iure saepe corporis molestias dolorem vero praesentium a. Iusto alias minus, sit aliquid facere cupiditate ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, repellendus? Veritatis consectetur, nesciunt beatae ab maiores eius enim deserunt laborum, porro itaque repudiandae rem accusamus doloremque quia atque culpa cupiditate?
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione, sequi excepturi, facilis, maxime iure saepe corporis molestias dolorem vero praesentium a. Iusto alias minus, sit aliquid facere cupiditate ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, repellendus? Veritatis consectetur, nesciunt beatae ab maiores eius enim deserunt laborum, porro itaque repudiandae rem accusamus doloremque quia atque culpa cupiditate?
         </p>
     </main>
