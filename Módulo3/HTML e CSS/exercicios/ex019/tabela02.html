@@ -14,13 +14,24 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 5px;
         }
         .posicao{
-            width:10px;
+            width:50px;
             text-align: center;
+        }
+
+        tbody >tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         .num{
@@ -38,6 +49,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA DE TABELAS GRANDES
         TABLE
+            CAPTION (LEGENDA TA TABELA)
             THEAD (NÃO OBRIGATÓRIO)
                 TR, TD, TH
             TBODY
@@ -46,11 +58,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th class="posicao">posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -69,12 +82,27 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">16 054 524</td>
             </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th class="posicao">Total de habitates</th>
+                <th scope="row" class="posicao">Total de habitates</th>
                 <td></td>
-                <td class="num"><strong>81.013.701</strong></td>
+                <td class="num"><strong>117.473.832</strong></td>
             </tr>
         </tfoot>
     </table>
