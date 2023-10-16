@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*cabeçalho fixo*/
         }
 
         caption{
@@ -21,26 +22,33 @@
             padding: 5px;
         }
 
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 5px;
         }
+        /*cabeçalho fixo. mais útil em tabelas grandes (pode não funcionar bem em todos os navegadores)*/
+        thead >tr > th{
+            position: sticky;
+            top: -1px;/*ou 0px, depende de como ficará*/
+            background-color: gray;
+        }
+
         .posicao{
             width:50px;
             text-align: center;
         }
 
-        tbody >tr:nth-child(2n){
+        tbody >tr:nth-child(2n){ /*Efeito zebrado. propriedade que permite estilizar pulando algums itens*/
             background-color: lightgray;
         }
 
         .num{
             text-align: right;
-        }
-
-        thead, tfoot{
-            background-color: gray;
-            color: white;
         }
        
     </style>
@@ -106,5 +114,12 @@
             </tr>
         </tfoot>
     </table>
+    <!--Para fins de rolagem, mostrar o cabeçalho fixo.-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio exercitationem fugit possimus sint veniam eaque nemo rerum, ex minus tempora recusandae quos quam voluptatum impedit ipsum architecto velit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Numquam est optio aut accusantium enim molestias debitis tempore cum incidunt quos, ad praesentium pariatur dolore harum inventore. Nemo, totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa distinctio, praesentium sint veniam ullam voluptate fugiat iure delectus mollitia. Veniam culpa reiciendis quam sequi animi quaerat cum blanditiis dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium dolor velit fugit ad corporis repellendus vitae officia quis! Delectus necessitatibus nesciunt magni, nam eius nihil. Sunt quibusdam labore quis.</p>
 </body>
 </html>
