@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe#git{
+            width: 450px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando uso de iframes</h1>
+    <p>Acessando o site do <a href="https://CursoemVideo.com" target="_blank">CursoemVideo</a> para aprender programação.</p>
+
+    <p>Acessando o site do 
+        
+        <iframe src="https://CursoemVideo.com" frameborder="0" width="500px" height="300px" scolling="no"><a href="https://CursoemVideo.com" target="_blank">CursoemVideo</a></iframe>
+        <!--Caso o dispositivo ou o navegador não seja compatível com o iframe, você poderá deixar uma mensagem o link alternativo.-->+
+        <!--o scolling pode não funcionar dependendo do navegador-->
+    para aprender programação.</p>
+
+    <p>O site do 
+
+        <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+
+        também é muito legal, pena que não funciona dentro do iframe!</p>
+
+        <p> O repositório do Guanabara
+            <!--por padrão o iframe tem de tamanho 300x150 px-->
+            <iframe id="git" src="https://gustavoguanabara.github.io" frameborder="0" width="450px" height="550px"> no <a href="https://gustavoguanabara.github.io" target="_blank">Github</a></iframe>
+
+            também é muito legal!
+        </p>
+        <!--Se houver CSS para iframe, ela irá sobrepor as configurações de mesmo estilo. Há não ser que ela seja de classe ou ids distintos-->
+</body>
+</html>
