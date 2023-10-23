@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 350px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam molestiae soluta vel molestias et aliquid aspernatur saepe reprehenderit? Nostrum, quae perspiciatis. Ex maxime atque et repellat animi dolor quisquam!</p>
+    <!--o conteudo do link será carregado no iframe pelo seu 'name'-->
+    <ul>
+        <li><a href="paginas extras/pg01.html" target="frame">primeira página</a></li>
+        <li><a href="paginas extras/pg02.html" target="frame">segunda página</a></li>
+        <li><a href="paginas extras/pg03.html" target="frame">terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis asperiores libero quo placeat. Rerum nobis doloribus tempora nulla nisi. Incidunt eaque nisi beatae? Totam sit temporibus quae aliquid recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reiciendis quasi est porro consequuntur voluptatibus iusto vel! Nesciunt excepturi, tempora enim doloremque harum laudantium, vero doloribus ex, qui temporibus ea.</p>
+    <!--O iframe com o atributo name será referencia nos links, para que o conteúdo deles apareça nesse espaço-->
+
+    <iframe id="tela" name="frame" srcdoc="<h1> teste de inicio</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat animi ullam sed. Eum cum tenetur natus accusamus sapiente corrupti illo ratione autem, atque blanditiis sint quibusdam, ut totam voluptatum?</p> <img src='imagens/one piece image.jpg'>" frameborder="1"> Infelizmente seu navegador não é compatível com isso.</iframe>
+
+    <!--O iframe começa vazio porquê o 'src' está vazio.-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat animi ullam sed. Eum cum tenetur natus accusamus sapiente corrupti illo ratione autem, atque blanditiis sint quibusdam, ut totam voluptatum?</p>
+</body>
+</html>
