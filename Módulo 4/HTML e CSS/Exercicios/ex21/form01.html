@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off"> <!--Esse action é um script para outra linguagem de programação que vai ser acionada quando o 'submit' desse formulário for clicado.-->
+       <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p> 
+       <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!--o "i" antes dos nomes no id é apenas para diferenciar que é o id ao inves do name, já que ambos tem o mesmo nome.-->
+       <p><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>
