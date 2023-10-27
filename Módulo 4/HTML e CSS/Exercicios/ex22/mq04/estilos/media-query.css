@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*Demais versões*/
+
+/*typical dcevice breakpoints
+pequenas telas: até 480px * 
+celular: 480 a 780px *
+tablete: 760 a 1024px
+desktop: 1025 a 1200px
+tv (grandes telas): 1201 +
+*/
+
+@media print{ /*IMPRESSÃO*/
+    *{
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);/*desnecessário(não funciona)*/
+    }
+
+    main{
+        width: 85vw;
+        border: 2px solid black;
+        background-color: aqua; /*para teste, não funciona nenhum tipo de background para impressão*/
+        text-align: center;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after{
+        content: 'Esse documento foi impresso do site de exercício de media query';
+        text-decoration: overline;
+    }
+
+    img#tv{ display: none;}
+    img#pc{ display: none;}
+    img#phone{ display:none;}
+    img#print{ display: block;}
+    img#tablet{ display: none;}
+}
+
+/* *Como fizemos o mobile first, não precisamos fazer o @media para telas pequenas e celular, pois já foram feitas* */
+
+@media screen and (min-width:760px) and (max-width:1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tv{ display: none;}
+    img#pc{ display: none;}
+    img#phone{ display:none;}
+    img#print{ display: none;}
+    img#tablet{ display: block;}
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main{
+        background-color: aqua; /*tirando a prova do background que não imprime*/
+    }
+    img#tv{ display: none;}
+    img#pc{ display: block;}
+    img#phone{ display:none;}
+    img#print{ display: none;}
+    img#tablet{ display: none;} 
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+        height: 500px;
+        position: relative; /*se não colocar relativa, ele vai se orientar não pelo margin, mas pelo body ou html*/
+    }
+
+
+    img{
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    img#tv{ display: block;}
+    img#pc{ display: none;}
+    img#phone{ display:none;}
+    img#print{ display: none;}
+    img#tablet{ display: none;}    
+}
