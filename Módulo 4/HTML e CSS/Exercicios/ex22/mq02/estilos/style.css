@@ -1,3 +1,24 @@
 @charset "UTF-8";
 
 /*Configurações gerais*/
+
+/*Ao colocar essa estilização padrão, as outras já "herdaram" elas, apenas será acrescentado ou sobreposto alguma formatação que posso diverger, para que melhor se adapte a necessidade*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: #233eff;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgb(18, 18, 128);
+}
