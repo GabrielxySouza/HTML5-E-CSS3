@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*typical dcevice breakpoints
+pequenas telas: até 480px * 
+celular: 480 a 780px *
+tablete: 760 a 1024px
+desktop: 1025 a 1200px
+tv (grandes telas): 1201 +
+*/
+
+@media screen and (min-width:760px) {
+    menu{
+        display: block;
+    }
+    span.material-icons{
+        display: none;
+    }
+    menu > ul >li{
+        display: inline-block;
+        width: 100px;
+    }
+    main{
+        width: 730px;
+    }
+}
