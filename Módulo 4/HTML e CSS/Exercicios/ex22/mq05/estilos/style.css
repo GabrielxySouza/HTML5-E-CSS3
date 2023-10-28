@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body, html{
+    background-color: lightgrey;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(145, 143, 143);
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+}
+
+span.material-icons{  /*para facilitar ou por questão de necessidade, podemos declarar ids também*/
+    color: white;
+    background-color: rgb(66, 66, 66);
+    width: 100vw; /*ou colocar como display:block*/
+    text-align: center; 
+    padding: 10px 0px; /*se usar o padding total de 10px, ficara com barra de rolagem lateral, por não ser display block, a pag ganha +20px largura*/
+    cursor: pointer;
+}
+
+span.material-icons:hover{
+    color: black;
+    background-color: white;
+}
+
+menu{
+    display: none; /*none - vai deixar de mostrar o menu para mostrar apenas o icon. para aparecer o meno novamente quando clicarmos no icon, vamos precisar usar um pouco de JavaScript*/
+}
+
+menu > ul{ /*se torna desnecessário quando tivermos o javaScript feito */
+    list-style-type:none;
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid  gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+
+main{
+    background-color: white;
+    width: 85vw;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2{
+    padding-bottom:15px; 
+
+}
+
+article > p{
+    padding: 2px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 25px;
+} 
